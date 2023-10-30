@@ -1,3 +1,4 @@
+/* counter css
 
 body {
   display: flex;
@@ -10,18 +11,37 @@ body {
   justify-content: space-between;
   width: 200px;
   margin-bottom: 10px;
-  background-color: rgb(186, 186, 255); 
-  color: rgb(250, 10, 10);
-}
+  background-color: rgb(186, 186, 255); /* Add blue background to the row */
+ /*  color: rgb(250, 10, 10);  Change text color to white for better visibility */
+/* }
 .counter {
   margin-left: 10px;
 }
 .green-button {
   background-color: green;
+}  */
+.accordion-container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  border: 1px solid #ddd;
 }
 
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
 
-.content {
-  text-align: center;
-  font-weight: bold;
+.accordion-title {
+  background-color: #f4f4f4;
+  padding: 15px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.accordion-title:hover {
+  background-color: #e4e4e4;
+}
+
+.accordion-content {
+  padding: 15px;
 }
