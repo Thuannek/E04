@@ -1,47 +1,45 @@
-/* counter css
+body{
+  background-color: #f2f2f2;
+}
+.container{
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
 
-body {
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  font-family: Arial, sans-serif;
-}
-.row {
-  display: flex;
   justify-content: space-between;
-  width: 200px;
-  margin-bottom: 10px;
-  background-color: rgb(186, 186, 255); /* Add blue background to the row */
- /*  color: rgb(250, 10, 10);  Change text color to white for better visibility */
-/* }
-.counter {
-  margin-left: 10px;
-}
-.green-button {
-  background-color: green;
-}  */
-.accordion-container {
-  width: 100%;
-  max-width: 600px;
-  margin: auto;
-  border: 1px solid #ddd;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 5px;
 }
 
-.accordion-item {
-  border-bottom: 1px solid #ddd;
-}
-
-.accordion-title {
-  background-color: #f4f4f4;
-  padding: 15px;
+button {
+  width: 25%;
+  padding: 12px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
   cursor: pointer;
-  user-select: none;
+  margin: 6px 10px
 }
 
-.accordion-title:hover {
-  background-color: #e4e4e4;
-}
-
-.accordion-content {
-  padding: 15px;
+input{
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
