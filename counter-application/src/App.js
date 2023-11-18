@@ -1,35 +1,18 @@
-import React, { useState } from 'react';
-import TodoForm from './components/TodoForm';
-import TodoList from './components/TodoList';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./pages/loginPage";
+import Todoapp from "./todoapp";
 
-function App() {
-  const [tasks, setTasks] = useState([]);
 
-  function AddTask(taskText) {
-    setTasks([...tasks, { text: taskText, completed: false }]);
-  }
-
-  function DeleteTask(index) {
-    const newTasks = tasks.filter((_, i) => i !== index);
-    setTasks(newTasks);
-  }
-
-  function ToggleTask(index) {
-    const newTasks = tasks.map((task, i) =>
-      i === index ? { ...task, completed: !task.completed } : task
-    );
-    setTasks(newTasks);
-  }
-
+const App = () => {
   return (
-    <div className="container">
-      <h2>Todo List</h2>
-      <TodoForm addTask={AddTask} />
-      <TodoList tasks={tasks} deleteTask={DeleteTask} toggleTask={ToggleTask} />
-    </div>
-    
+    <BrowserRouter>
+      <Routes>
+        <Route path="/login" element={<Login/>} />
+        <Route path="/todo" element={<Todoapp/>} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
